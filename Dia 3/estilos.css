@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Inter:wght@400;700&family=Secular+One&display=swap');
+
+/* Para alteração com variáveis global */
+:root {
+    --cor-fundo: #19032d;
+    --cor-texto: #F0EEED;
+    --cor-negrito: #C92C6D;
+    --cor-hover: #0a0112;
+    --cor-link: #22D4FD;
+    --gradiente: linear-gradient( to right, transparent, #C92C6D, transparent);
+    
+    --fonte-titulo: 'Akronim', cursive;
+    --fonte-texto: 'Secular One', sans-serif;
+
+    --size-titulo: 4.5rem;
+    --size-texto: 1.5rem;
+}
+
+/* Corpo da Pagina */
+body {
+    /* height: 100vh; atalho para comentar ctrl+K+C */
+    box-sizing: border-box;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+/* Cabeça Corpo da Pagina (Header/Nav) */
+.cabeça {
+    background-color: var(--cor-hover);
+    padding: 24px;
+}
+
+.cabeça__menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 100px;
+}
+
+.menu__link {
+    font-family: var(--fonte-texto);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--cor-negrito);
+    text-decoration: none;
+}
+
+/* Tronco Corpo da Pagina (Main/Section/Div) */
+.tronco {
+    padding: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.tronco__titulo {
+  font-size: var(--size-titulo);
+  font-family: var(--fonte-titulo);
+  text-align: center;
+}
+
+.tronco__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.link__botao {
+    /*background-color: black; Linha comentada de exemplo*/
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-link);
+    border-radius: 8px;
+    width: 50%;
+    text-align: center;
+    font-size: 2.25rem;
+    text-decoration: none;
+    color: var(--cor-negrito);
+    font-family: var(--fonte-titulo);
+}
+
+.link__botao:hover {
+    background-color: var(--cor-hover);
+}
+
+/* Pés do Corpo da Pagina (Footer) */
+.pe {
+    padding: 5px;
+    color: var(--cor-hover);
+    background-image: var(--gradiente) ;
+    text-align: center;
+    font-family: var(--fonte-texto);
+    font-size: 1rem;
+    font-weight: 400;
+}
