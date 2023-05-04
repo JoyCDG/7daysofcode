@@ -6,10 +6,12 @@ let numeroDez = 10
 let stringDez = '10'
 
 if (numeroUm == stringUm) {
-  console.log('As variáveis numeroUm e stringUm tem o mesmo valor, mas tipos diferentes')
+  console.log('Ass variáveis numero Um e stringUm tem o mesmo valor, mas tipos diferentes')
 } else {
   console.log('As variáveis numeroUm e stringUm não tem o mesmo valor')
 }
+
+lll
 
 if (numeroTrinta == stringTrinta) {
   console.log('As variáveis numeroTrinta e stringTrinta tem o mesmo valor e mesmo tipo')
